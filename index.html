@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <base href="/pwa-example/">
+  <base href="/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,9 +12,25 @@
 
   <link rel="manifest" href="manifest.json">
 
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC5EMEWktsdNHPwtd1Ksq530sZEXVIFRSg",
+      authDomain: "pwa-exemple-prj123.firebaseapp.com",
+      databaseURL: "https://pwa-exemple-prj123.firebaseio.com",
+      projectId: "pwa-exemple-prj123",
+      storageBucket: "",
+      messagingSenderId: "781706800672"
+    };
+    firebase.initializeApp(config);
+  </script>
+
   <script src="./js/object.observe.polyfill.js"></script>
   <script src="./js/array.observer.polyfill.js"></script>
   <script src="./js/scripts.js"></script>
+  <script src="./push.js"></script>
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
